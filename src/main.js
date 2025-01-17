@@ -2,7 +2,7 @@ const tickRate = 1000 / 30;
 let score = 0;
 
 let confetti = new Building("Confetti", 0.1, 15, "buyConfetti");
-let partyhat = new Building("Partyhat", 1, 100,"buyConfetti");
+let partyhat = new Building("Partyhat", 1, 100,"buyPartyhat");
 let presents = new Building("Presents", 2, 200, "buyPresents" );
 
 function incScore() {
@@ -24,6 +24,7 @@ function updateButtons(){
 
 function updatePage() {
     incScore();
+    updateButtons();
     document.getElementById("score").innerHTML = 
     '$' + Math.floor(score).toLocaleString();
 }

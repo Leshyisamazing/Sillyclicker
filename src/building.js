@@ -10,11 +10,11 @@ class Building {
         this.visible = false; //change this to false!!
     }
 
-    purchse(){
+    purchase(){
         score -= this.cost;
         this.amountOwned++;
         this.cps = this.baseCps * this.amountOwned;
-        this.cost = Math.ceil(this.cost * 1.15 ** this.amountOwned);
+        this.cost = Math.ceil(this.baseCost * 1.15 ** this.amountOwned);
     }
 
     buttonState(){
