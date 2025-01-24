@@ -8,7 +8,7 @@ class Venue extends Upgrade {
         super.purchase();
         clickStrength++;
         this.building.doubleUpgrade++;
-        this.building.applyUpgrade();
+        this.building.applyDoubleUpgrade();
 
     }
 }

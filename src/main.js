@@ -6,7 +6,7 @@ let confetti = new Building("Confetti", 0.1, 15, "buyConfetti");
 let partyhat = new Building("Partyhat", 1, 100,"buyPartyhat");
 let presents = new Building("Presents", 2, 200, "buyPresents" );
 
-let venue1 = new Venue('Venue1' , 100, confetti);
+let venue1 = new Venue('Venue I' , 100, confetti);
 
 function incScore() {
     score += confetti.cps;
