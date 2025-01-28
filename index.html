@@ -1,30 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="src/building.js"></script>
-    <script src="src/upgrade.js"></script>
-    <script src="src/venue.js"></script>
-    <script src="src/main.js"></script>
-    <title>Silly Clicker</title>
-</head>
-<body>
-    <h1>Silly Clicker</h1>
-    <h2>Just be silly. Be the silliest of them all. Collect your silly dollars.</h2>
-    <h3>Score: <span class="score" id="score">0</span></h3>
-    <button type="button" onclick="scorePlusPlus()">Click Me!</button>
-    <h4>Buildings</h4>
-    <button type="button" id="buyConfetti" onclick="confetti.purchase()">Buy Confetti</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="src/building.js"></script>
+        <script src="src/upgrade.js"></script>
+        <script src="src/venue.js"></script>
+        <script src="src/main.js"></script>
+        <title>Silly Clicker</title>
+    </head>
+    <body>
+        <header>
+            <h1>Silly Clicker</h1>
+            <h2>
+                Just be silly. Be the silliest of them all. Collect your silly
+                dollars.
+            </h2>
+        </header>
+        <div class="outer">
+            <div class="click">
+                <h3>Score: <span class="score" id="score">0</span></h3>
 
-    <button type="button" id="buyPartyhat" onclick="partyhat.purchase()">Buy Partyhat</button>
+                <button type="button" onclick="scorePlusPlus()">
+                    Be silly!
+                </button>
+            </div>
 
-    <button type="button" id="buyPresents" onclick="presents.purchase()">Buy Presents</button>
+            <div class="store">
+                <div class="buildings">
+                    <div class="store-title">
+                        <h4>Buildings</h4>
+                    </div>
 
-    <!--Add more buildings here-->
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyConfetti"
+                        onclick="confetti.purchase()"
+                    >
+                        Buy Confetti
+                    </button>
 
-    <h4>Upgrades</h4>
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyPartyhat"
+                        onclick="partyhat.purchase()"
+                    >
+                        Buy Partyhat
+                    </button>
 
-    <button type="button" id="buyVenueI" onclick="venue1.purchase()">Buy Venue</button>
-</body>
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyPresents"
+                        onclick="presents.purchase()"
+                    >
+                        Buy Presents
+                    </button>
+
+                    <!--Add more buildings here-->
+                </div>
+                <div class="upgrades">
+                    <div class="store-title">
+                        <h4>Upgrades</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyVenueI"
+                        onclick="venue1.purchase()"
+                    >
+                        Buy Venue
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
