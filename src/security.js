@@ -1,4 +1,4 @@
-class Venue extends Upgrade {
+class Security extends Upgrade {
     constructor(upgradeName, cost, building) {
         super(upgradeName, cost);
         this.building = building;
@@ -6,7 +6,7 @@ class Venue extends Upgrade {
 
     purchase() {
         super.purchase();
-        clickStrength = 3;
+        clickStrength++;
         this.building.doubleUpgrade++;
         this.building.applyDoubleUpgrade();
     }

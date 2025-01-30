@@ -3,10 +3,11 @@ let clickStrength = 1;
 let score = 0;
 
 let confetti = new Building("Confetti", 0.1, 15, "buyConfetti");
-let partyhat = new Building("Partyhat", 1, 100,"buyPartyhat");
-let presents = new Building("Presents", 2, 200, "buyPresents" );
+let partyhat = new Building("Partyhat", 1, 100, "buyPartyhat");
+let presents = new Building("Presents", 2, 200, "buyPresents");
 
-let venue1 = new Venue('Venue I' , 100, confetti);
+let venueI = new Venue("Venue I", 100, confetti);
+let securityI = new Security("Security I", 200, confetti);
 
 function incScore() {
     score += confetti.cps;
@@ -18,19 +19,19 @@ function scorePlusPlus() {
     score += clickStrength;
 }
 
-function updateButtons(){
+function updateButtons() {
     confetti.buttonState();
     partyhat.buttonState();
     presents.buttonState();
-    venue1.buttonState();
+    venueI.buttonState();
+    securityI.buttonState();
 }
-
 
 function updatePage() {
     incScore();
     updateButtons();
-    document.getElementById("score").innerHTML = 
-    '$' + Math.floor(score).toLocaleString();
+    document.getElementById("score").innerHTML =
+        "$" + Math.floor(score).toLocaleString();
 }
 
 setInterval(updatePage, tickRate);

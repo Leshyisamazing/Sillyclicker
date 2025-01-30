@@ -1,5 +1,10 @@
 body {
     margin: 0 15% 0 15%;
+    background-color: #f9f5be;
+    background-image: url(/media/backgroundimage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 header {
@@ -15,7 +20,7 @@ div.outer {
 }
 
 div.click {
-    border-bottom: 4px solid black ;
+    border-bottom: 4px solid black;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -44,7 +49,6 @@ div.upgrades {
 div.buildings {
     border-right: 4px solid black;
 }
-
 
 .button {
     border-bottom: 1px solid black;
