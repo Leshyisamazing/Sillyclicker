@@ -9,18 +9,24 @@ body {
 
 header {
     text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #1aacff;
 }
 
 header > h2 {
     font-style: italic;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
 }
 
 div.outer {
-    border: 4px solid black;
+    border: 4px solid #f54aa2;
+    background-color: rgba(250, 216, 255, 0.411);
 }
 
 div.click {
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #f54aa2;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -34,7 +40,7 @@ div.store {
 
 div.stores-title {
     text-align: center;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #f54aa2;
 }
 
 div.buildings,
@@ -47,13 +53,17 @@ div.upgrades {
 }
 
 div.buildings {
-    border-right: 4px solid black;
+    border-right: 4px solid #f54aa2;
 }
 
 .button {
-    border-bottom: 1px solid black;
+    background-color: #febed8;
+    border-bottom: 1px solid #ff76ee;
+    color: #9850ff;
     padding: 14px 28px;
-    font-size: 1.25em;
+    font-size: 1em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     cursor: pointer;
     text-align: left;
 }
