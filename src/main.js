@@ -13,6 +13,7 @@ let music = new Building("Music", 4, 400, "buyMusic");
 let venueI = new Venue("Venue I", 100, confetti);
 let securityI = new Security("Security I", 200, confetti);
 let speakerI = new Speaker("Speaker I", 300, confetti);
+let lightsI = new Lights("Lights I", 400, confetti);
 
 function incScore() {
     score += confetti.cps;
@@ -37,6 +38,7 @@ function updateButtons() {
     venueI.buttonState();
     securityI.buttonState();
     speakerI.buttonState();
+    lightsI.buttonState();
 }
 
 function updatePage() {
