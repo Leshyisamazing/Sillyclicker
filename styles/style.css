@@ -1,7 +1,7 @@
 body {
     margin: 0 15% 0 15%;
     background-color: #f9f5be;
-    background-image: url(/media/backgroundimage.png);
+    background-image: url(../media/backgroundimage.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
